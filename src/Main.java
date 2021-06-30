@@ -1,4 +1,6 @@
-
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args){
@@ -8,7 +10,7 @@ public class Main {
         list.add("pineapple");
         list.add("banana");
         System.out.println("There are: " + list.size() + " elements in this list");
-        for(Iterator<String> it = list.iterator();it.hasNext(); ){
+        for(Iterator<String> it = list.iterator(); it.hasNext(); ){
             String s = it.next();
             System.out.println(s);
         }
